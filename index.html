@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <title>Wins & Profits</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+        <!--cdncss link-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" />
+
+
+        <link rel="stylesheet" href="css/lightbox.min.css">
+
+        <!--style sheet-->
+        <link rel="stylesheet" href="css/style.css">
+
+
+    </head>
+
+    <body>
+        <!--svg icons-->
+        <svg>
+            <symbol id="telegram" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M22.265 2.428a2.048 2.048 0 0 0-2.078-.324L2.266 9.339a2.043 2.043 0 0 0 .104 3.818l3.625 1.261l2.02 6.682a.998.998 0 0 0 .119.252c.008.012.019.02.027.033a.988.988 0 0 0 .211.215a.972.972 0 0 0 .07.05a.986.986 0 0 0 .31.136l.013.001l.006.003a1.022 1.022 0 0 0 .203.02l.018-.003a.993.993 0 0 0 .301-.052c.023-.008.042-.02.064-.03a.993.993 0 0 0 .205-.114a250.76 250.76 0 0 1 .152-.129l2.702-2.983l4.03 3.122a2.023 2.023 0 0 0 1.241.427a2.054 2.054 0 0 0 2.008-1.633l3.263-16.017a2.03 2.03 0 0 0-.693-1.97M9.37 14.736a.994.994 0 0 0-.272.506l-.31 1.504l-.784-2.593l4.065-2.117Zm8.302 5.304l-4.763-3.69a1.001 1.001 0 0 0-1.353.12l-.866.955l.306-1.487l7.083-7.083a1 1 0 0 0-1.169-1.593L6.745 12.554L3.02 11.191L20.999 4Z" />
+            </symbol>
+            <symbol id="twitter" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M22.991 3.95a1 1 0 0 0-1.51-.86a7.48 7.48 0 0 1-1.874.794a5.152 5.152 0 0 0-3.374-1.242a5.232 5.232 0 0 0-5.223 5.063a11.032 11.032 0 0 1-6.814-3.924a1.012 1.012 0 0 0-.857-.365a.999.999 0 0 0-.785.5a5.276 5.276 0 0 0-.242 4.769l-.002.001a1.041 1.041 0 0 0-.496.89a3.042 3.042 0 0 0 .027.439a5.185 5.185 0 0 0 1.568 3.312a.998.998 0 0 0-.066.77a5.204 5.204 0 0 0 2.362 2.922a7.465 7.465 0 0 1-3.59.448A1 1 0 0 0 1.45 19.3a12.942 12.942 0 0 0 7.01 2.061a12.788 12.788 0 0 0 12.465-9.363a12.822 12.822 0 0 0 .535-3.646l-.001-.2a5.77 5.77 0 0 0 1.532-4.202m-3.306 3.212a.995.995 0 0 0-.234.702c.01.165.009.331.009.488a10.824 10.824 0 0 1-.454 3.08a10.685 10.685 0 0 1-10.546 7.93a10.938 10.938 0 0 1-2.55-.301a9.48 9.48 0 0 0 2.942-1.564a1 1 0 0 0-.602-1.786a3.208 3.208 0 0 1-2.214-.935q.224-.042.445-.105a1 1 0 0 0-.08-1.943a3.198 3.198 0 0 1-2.25-1.726a5.3 5.3 0 0 0 .545.046a1.02 1.02 0 0 0 .984-.696a1 1 0 0 0-.4-1.137a3.196 3.196 0 0 1-1.425-2.673c0-.066.002-.133.006-.198a13.014 13.014 0 0 0 8.21 3.48a1.02 1.02 0 0 0 .817-.36a1 1 0 0 0 .206-.867a3.157 3.157 0 0 1-.087-.729a3.23 3.23 0 0 1 3.226-3.226a3.184 3.184 0 0 1 2.345 1.02a.993.993 0 0 0 .921.298a9.27 9.27 0 0 0 1.212-.322a6.681 6.681 0 0 1-1.026 1.524" />
+            </symbol>
+            <symbol id="whatsapp" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M16.6 14c-.2-.1-1.5-.7-1.7-.8c-.2-.1-.4-.1-.6.1c-.2.2-.6.8-.8 1c-.1.2-.3.2-.5.1c-.7-.3-1.4-.7-2-1.2c-.5-.5-1-1.1-1.4-1.7c-.1-.2 0-.4.1-.5c.1-.1.2-.3.4-.4c.1-.1.2-.3.2-.4c.1-.1.1-.3 0-.4c-.1-.1-.6-1.3-.8-1.8c-.1-.7-.3-.7-.5-.7h-.5c-.2 0-.5.2-.6.3c-.6.6-.9 1.3-.9 2.1c.1.9.4 1.8 1 2.6c1.1 1.6 2.5 2.9 4.2 3.7c.5.2.9.4 1.4.5c.5.2 1 .2 1.6.1c.7-.1 1.3-.6 1.7-1.2c.2-.4.2-.8.1-1.2zm2.5-9.1C15.2 1 8.9 1 5 4.9c-3.2 3.2-3.8 8.1-1.6 12L2 22l5.3-1.4c1.5.8 3.1 1.2 4.7 1.2c5.5 0 9.9-4.4 9.9-9.9c.1-2.6-1-5.1-2.8-7m-2.7 14c-1.3.8-2.8 1.3-4.4 1.3c-1.5 0-2.9-.4-4.2-1.1l-.3-.2l-3.1.8l.8-3l-.2-.3c-2.4-4-1.2-9 2.7-11.5S16.6 3.7 19 7.5c2.4 3.9 1.3 9-2.6 11.4" />
+            </symbol>
+            <symbol id="facebook" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M15.12 5.32H17V2.14A26.11 26.11 0 0 0 14.26 2c-2.72 0-4.58 1.66-4.58 4.7v2.62H6.61v3.56h3.07V22h3.68v-9.12h3.06l.46-3.56h-3.52V7.05c0-1.05.28-1.73 1.76-1.73" />
+            </symbol>
+            <symbol id="monitor" viewBox="0 0 24 24">
+                <path fill="#4ba1a7" d="M19 2H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h2.64l-.58 1a2 2 0 0 0 0 2a2 2 0 0 0 1.75 1h6.46A2 2 0 0 0 17 21a2 2 0 0 0 0-2l-.59-1H19a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3M8.77 20L10 18h4l1.2 2ZM20 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16Zm0-3H4V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Z" />
+            </symbol>
+            <symbol id="menu" viewBox="0 0 24 24">
+                <path fill="black"
+                    d="M4 6a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m0 12a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m7-7a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2z" />
+            </symbol>
+        </svg>
+
+        <header id="top" class="position-sticky top-0 start-0" style="z-index:10;">
+            <nav class="navbar bg-white fixed-top">
+                <div class="container-fluid">
+                    <div class="d-flex align-items-center g-4">
+                        <a class="navbar-brand d-flex"
+                            href="#" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+                            font-size: 24px; font-weight: 700; letter-spacing: 2px;
+                            text-decoration: none; 
+                            border-radius: 5px;">
+                            <span>WINS&PROFITS</span>
+                        </a>                        <div class="icon px-5">
+                            <a href="#" class="text-decoration-none">
+                                <svg class="telegram" width="24" height="24">
+                                    <use xlink:href="#telegram"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <svg class="whatsapp" width="24" height="24">
+                                    <use xlink:href="#whatsapp"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navabar-toggler-icon">
+                            <svg class="text-primary menu" width="32" height="32">
+                                <use xlink:href="#menu"></use>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="offcanvas offcanvas-end text-white bg-black" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close btn-close-white ms-3" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav flex-grow-1 p-4">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-uppercase ls-4 text-white" aria-current="page" href="index.html">Home</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section style="margin-top: -80px;">
+            <div class="container">
+                <div class="banner rounded-4 p-5"
+                    style="background-image: url(images/trade.jpg); background-size: cover ; background-repeat: no-repeat; background-position: center;">
+                    <div class="text-content text-white py-5 my-5">
+                        <p class="fs-4">
+                            Where traders are made, and poverty is defeated.
+                        </p>
+                        <h3 class="display-2" style="font-size: 100px">
+                            Wins & Profits 
+                        </h3>
+                        <p class="fs-4">
+                            Trading Community
+                        </p>
+                    </div>
+                    <div class="row text-uppercase bg-black rounded-4 p-3 mt-5">
+                        <div class="col-md-3">
+                            <div class="d-flex align-items-center gap-4">
+                                <h2 class="display-2 text-light">
+                                    5+
+                                </h2>
+                                <p class="text-light-emphasis justify-content-center m-0 ls-4">
+                                    Years of <br> Trading Excellence
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="d-flex align-items-center gap-4">
+                                <h2 class="display-2 text-light">
+                                    800+
+                                </h2>
+                                <p class="text-light-emphasis justify-content-center m-0 ls-4">
+                                    Empowered <br> Traders
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="d-flex align-items-center gap-4">
+                                <h2 class="display-2 text-light">
+                                    100%
+                                </h2>
+                                <p class="text-light-emphasis justify-content-center m-0 ls-4">
+                                    Profit-Driven <br> Training Model
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="d-flex align-items-center gap-4">
+                                <h2 class="display-2 text-light">
+                                    24/7
+                                </h2>
+                                <p class="text-light-emphasis justify-content-center m-0 ls-4">
+                                    Mentorship & <br> Support
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-5">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-10 text-center">
+                        <h2 class="fw-bold mb-3 text-dark">Start Your Trading Journey</h2>
+                        <hr class="mx-auto" style="width: 80px; border: 2px solid #0d6efd;">
+                        <p class="fs-5 text-secondary">
+                            At Wins and Profits, we believe trading is more than just a skill — it's a life-changing opportunity. 
+                            Through practical training, real-time mentorship, and a results-based model, we empower individuals to build financial freedom and escape poverty.
+                            Our approach is simple, powerful, and proven:
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-3">
+                        <div class="d-flex gap-4 align-items-start">
+                            <div class="icon">
+                                <span style="font-size: 40px;margin-top: 30px;color: #6dbfb8" class="mdi mdi-auto-fix"></span>
+                            </div>
+                            <div class="text-md-start">
+                                <h5>
+                                    High-Quality Training
+                                </h5>
+                                <p class="postf">
+                                    We help complete beginners start strong with real accounts and hands-on learning.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="d-flex gap-4 align-items-start">
+                            <div class="icon">
+                                <span style="font-size: 40px;margin-top: 30px;color: #be95be" class="mdi mdi-globe-model"></span>
+                            </div>
+                            <div class="text-md-start">
+                                <h5>
+                                    Profit-Sharing Model
+                                </h5>
+                                <p class="postf">
+                                    We’re a results-driven community where your success directly drives ours.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="d-flex gap-4 align-items-start">
+                            <div class="icon">
+                                <span style="font-size: 40px;margin-top: 30px;color: #b3be62" class="mdi mdi-cast-education"></span>
+                            </div>
+                            <div class="text-md-start">
+                                <h5>
+                                    Online & In-Person Classes
+                                </h5>
+                                <p class="postf">
+                                    Our goal is to build independent traders ready to thrive in global financial markets.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5" style="margin-top: -50px;">
+            <div class="container">
+                <div class="rounded-4 p-5"
+                    style="background-image: url(images/bull.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-5">
+                            <div class="h-100 bg-black text-white p-4 rounded-4 shadow">
+                                <h3 class="mb-4">What We Offer</h3>
+                                <p class="text-light fs-6 mb-3">
+                                    We offer high-quality, practical training in Forex and financial markets —
+                                    <span class="fst-italic text-white-50">
+                                        no fluff, just real results.
+                                    </span>
+                                </p>
+                                <p class="fs-5 fw-medium text-white mb-3" style="line-height: 1.6;">
+                                    Yes — <span class="text-primary">no upfront fees</span>, <span class="text-primary">no costly courses</span>.
+                                </p>
+                                <p class="text-light fs-6">
+                                    All you need is capital in your own trading account. Your money stays fully under your control.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-top: -50px; margin-bottom: 50px;" id="our_process">
+            <div class="container">
+                <div class="text-center pt-5">
+                    <h3 class="display-5 fw-bold">
+                        Our Results-Driven Model
+                    </h3>
+                    <p class="text-secondary fs-5 mt-3">
+                        We’ve simplified the process so you can focus on learning and earning — here’s how it works:
+                    </p>
+                </div>
+
+                <div class="row mt-5 align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <img src="images/illustration-6.png" class="img-fluid" alt="Trading Process Illustration">
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="accordion accordion-flush" id="accordion-flush">
+                            <!-- Step 1 -->
+                            <div class="accordion-item border mb-3 rounded-3">
+                                <h5 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                                        aria-controls="collapseOne">
+                                        1. Open and fund your own account
+                                    </button>
+                                </h5>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion-flush">
+                                    <div class="accordion-body">
+                                        You stay in full control — we never take your money. Simply open your own live trading account and fund it with capital you’re comfortable starting with.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 2 -->
+                            <div class="accordion-item border mb-3 rounded-3">
+                                <h5 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        2. Your account is managed by our expert trader
+                                    </button>
+                                </h5>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+                                    <div class="accordion-body">
+                                        Your account is professionally traded by our CEO — a full-time trader with a consistent track record and years of experience in financial markets.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 3 -->
+                            <div class="accordion-item border mb-3 rounded-3">
+                                <h5 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        3. Training begins — in real time, with real money
+                                    </button>
+                                </h5>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+                                    <div class="accordion-body">
+                                        No theory-only classes. You get trained while your account is actively being traded. This means hands-on learning using your own real trades — not demo simulations.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 4 -->
+                            <div class="accordion-item border mb-3 rounded-3">
+                                <h5 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        4. Profits are shared 50/50 — daily
+                                    </button>
+                                </h5>
+                                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+                                    <div class="accordion-body">
+                                        You keep half of all profits made. The other half goes to Wins and Profits. This ensures we’re motivated to help you win — every single day.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 5 -->
+                            <div class="accordion-item border mb-3 rounded-3">
+                                <h5 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
+                                        5. No profit? No payment. Period.
+                                    </button>
+                                </h5>
+                                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+                                    <div class="accordion-body">
+                                        We don’t charge you upfront or per class. Our only compensation is from the profits we generate for you. If you don’t profit, we don’t get paid.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border mb-3 rounded-3 p-3" style="background-color: #e9eaf3;">
+                                This results-driven model ensures our team is just as committed to your growth as you are. Your success is our success.
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="py-5" style="margin-top: -50px;">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h3 class="display-6 fw-semibold">Daily Profit Target</h3>
+                    <p class="text-muted fs-5">Earn while you learn — our model shares real profits with you from day one.</p>
+                </div>
+                <div class="row justify-content-center">
+                    <!-- Card 1 -->
+                    <div class="col-md-6 mb-4">
+                        <div class="border rounded-4 shadow-sm p-4 h-100">
+                            <h4 class="fw-bold mb-3">How It Works</h4>
+                            <p class="mb-2">Our strategy is simple yet powerful: we aim for a <span class="fw-semibold text-success">20% daily return</span> on your capital.</p>
+                            <p>For instance, if you start with <strong>$500</strong>, the target profit for the day would be <strong>$100</strong>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-6 mb-4">
+                        <div class="border rounded-4 shadow-sm p-4 h-100">
+                            <h4 class="fw-bold mb-3">Fair Profit Sharing</h4>
+                            <p class="mb-2">From the $100 profit, <strong>you take home $50</strong> immediately.</p>
+                            <p>The remaining <strong>$50 goes to Wins and Profits</strong> — as your performance-based training fee.</p>
+                            <p class="mt-3 text-muted">No upfront costs. No profit. No payment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-top: -30px;" id="our_programs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto" data-aos="fade-up">
+                        <div class="section-header text-center">
+                            <h4 class="fw-bold fs-2 txt-fx slide-up">
+                                Everyone learns differently — that's why we offer both in-person and online training, giving you the flexibility to choose what works best for you.
+                            </h4>
+                        </div><!--section-header-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 mb-3">
+                        <div class="h-100 bg-yellow p-4 rounded-4">
+                            <h3>
+                                Online Classes
+                            </h3>
+                            <div class="py-4">
+                                <h5>
+                                    Learn from anywhere, on your terms.
+                                </h5>
+                                <p class="text-dark-emphasis">
+                                    Join live sessions, mentorship calls, and detailed market analysis — all accessible from your laptop or phone.
+                                </p>
+                            </div>
+                            <p class="text-dark-emphasis">
+                                Flexible | 24/7 Access
+                            </p>
+                            <h5>
+                                Train at your pace, on your schedule.
+                            </h5>
+                            <p class="text-dark-emphasis">
+                                Whether you're an early riser or night owl, our online platform is always open. Learn at the time that fits your lifestyle.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-3">
+                        <div class="h-100 bg-green p-4 rounded-4">
+                            <h3>
+                                Physical Classes
+                            </h3>
+                            <div class="py-4">
+                                <p class="text-dark-emphasis">
+                                    Monday - Friday
+                                </p>
+                                <h5>
+                                    In-person training with real-time support
+                                </h5>
+                                <p class="text-dark-emphasis">
+                                    Join interactive classroom sessions guided by expert traders. Ask questions, get live feedback, and build your skills side-by-side with peers.
+                                </p>
+                            </div>
+                            <p class="text-dark-emphasis">
+                                Nairobi | Kisumu | Online
+                            </p>
+                            <h5>
+                                Hands-on learning, community driven
+                            </h5>
+                            <p class="text-dark-emphasis">
+                                Our physical classes create a supportive environment for learning with group tasks, workshops, and direct mentorship.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-3">
+                        <div class="h-100 bg-teal p-4 rounded-4">
+                            <h3>
+                                Learn at Your Own Pace
+                            </h3>
+                            <div class="py-4">
+                                <p class="text-dark-emphasis">
+                                    No fixed training periods
+                                </p>
+                                <h5>
+                                    Your journey, your schedule
+                                </h5>
+                                <p class="text-dark-emphasis">
+                                    Progress through the material on your own timeline. Whether you’re fast-tracking your learning or balancing it with other responsibilities, we support your pace.
+                                </p>
+                            </div>
+                            <p class="text-dark-emphasis">
+                                Always connected
+                            </p>
+                            <h5>
+                                Direct access to mentors and community
+                            </h5>
+                            <p class="text-dark-emphasis">
+                                Get continuous guidance and join a vibrant network of traders who are growing and winning together — wherever you are.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section style="margin-top: 20px;">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="display-3 mb-5">
+                        Why Choose Wins and Profits?
+                    </h2>
+                </div>
+
+                <div class="swiper testimonial-swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="testimonial-card rounded-3 py-4 px-4 swiper-slide">
+                            <div class="text-start">
+                                <p>
+                                    <strong>Transparent</strong> – Your funds stay in your own account. You see everything. It's real trading.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card rounded-3 py-4 px-4 swiper-slide">
+                            <div class="text-start">
+                                <p>
+                                    <strong>Results-Based Training</strong> – We only earn when you profit. Your success is our success — literally.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card rounded-3 py-4 px-4 swiper-slide">
+                            <div class="text-start">
+                                <p>
+                                    <strong>No Upfront Fees</strong> – No subscriptions. No hidden charges. Just real, performance-based training.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card rounded-3 py-4 px-4 swiper-slide">
+                            <div class="text-start">
+                                <p>
+                                    <strong>In-Person and Remote Learning</strong> – Flexible training options tailored to your schedule.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card rounded-3 py-4 px-4 swiper-slide">
+                            <div class="text-start">
+                                <p>
+                                    <strong>Community-Driven </strong> – We're not just building traders; we're building financially empowered communities.
+                                    <!-- <strong>Community-Driven Mission</strong> – Building financially empowered communities. -->
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="testimonial-swiper-pagination position-relative mt-5 text-center"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="py-5" id="our_vision">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="display-3">
+                        A Mission Bigger Than Trading
+                    </h2>
+                    <p>
+                        <!-- Accusan maiores alias conseaut equatur aut perferendi. -->
+                    </p>
+                </div>
+                <div class="row py-4">
+                    <div class="col-lg-6 p-3">
+                        <div class="post-item p-3 border rounded-5">
+                            <div class="row g-md-5">
+                                <div class="col-lg-5">
+                                    <img src="images/post-thumb-1.jpg" class="img-fluid rounded-4">
+                                </div>
+                                <div class="col-lg-7">
+                                    <p class="text-uppercase text-muted mt-3">
+                                        Vision
+                                    </p>
+                                    <p>
+                                        Our vision is to create a movement of financially independent individuals who will build wealth, support their families, and drive change in their communities. We're not just training traders — we're transforming lives.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-3">
+                        <div class="post-item p-3 border rounded-5">
+                            <div class="row g-md-5">
+                                <div class="col-lg-5">
+                                    <img src="images/post-thumb-2.jpg" class="img-fluid rounded-4">
+                                </div>
+                                <div class="col-lg-7">
+                                    <p class="text-uppercase text-muted mt-3">
+                                        FINANCIAL FREEDOM
+                                    </p>
+                                    <p>
+                                        Through trading, we’re breaking barriers, building legacies, and changing mindsets. With Wins and Profits, you’re not alone — you're part of something bigger.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-3">
+                        <div class="post-item p-3 border rounded-5">
+                            <div class="row g-md-5">
+                                <div class="col-lg-5">
+                                    <img src="images/post-thumb-3.jpg" class="img-fluid rounded-4">
+                                </div>
+                                <div class="col-lg-7">
+                                    <p class="text-uppercase text-muted mt-3">
+                                        TAKE CONTROL
+                                    </p>
+                                    <p>
+                                        This is your opportunity to take control of your financial future. Join a growing community of traders who are focused, disciplined, and committed to success. Join a system that works. Join a team that wins.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-3">
+                        <div class="post-item p-3 border rounded-5">
+                            <div class="row g-md-5">
+                                <div class="col-lg-5">
+                                    <img src="images/post-thumb-4.jpg" class="img-fluid rounded-4">
+                                </div>
+                                <div class="col-lg-7">
+                                    <p class="text-uppercase text-muted mt-3">
+                                        WELCOME
+                                    </p>
+                                    <p>
+                                        Welcome to Wins and Profits Traders Community. Where traders are made, and poverty is defeated.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="text-center"> -->
+                <!--     <button type="button" class="btn btn-outline-dark btn-lg mt-3 btn-color text-uppercase"> -->
+                <!--         View All Blogs -->
+                <!--     </button> -->
+                <!-- </div> -->
+            </div>
+        </section>
+
+        <section class="p-5 bg-yellow py-5">
+            <div class="container">
+                <div class="row justify-content-center my-5">
+                    <div class="col-md-5">
+                        <h6>
+                            Quick Contact
+                        </h6>
+                        <h2 class="display-3">
+                            Leave a Message
+                        </h2>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="mb-3">
+                            <input type="name" class="form-control p-3 rounded-4" name="name" id="name" aria-describedby="nameHelpId"
+                                placeholder="your name" />
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control p-3 rounded-4" name="email" id="email" aria-describedby="emailHelpId"
+                                placeholder="your email" />
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control p-3 rounded-4" name="your message" placeholder="your message" id="message" rows="3"></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button type="button" class="btn btn-dark btn-lg text-uppercase rounded-4">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer" class="bg-black text-white py-5">
+            <div class="container-sm">
+                <div class="row g-md-5 my-5">
+                    <div class="col-md-4">
+                        <div class="info-box">
+                            <img src="images/logo1.png" class="img-fluid" width="250px" style="margin-top: -130px;">
+                            <p class="py-4">
+                                Welcome to Wins and Profits Traders Community. Where traders are made, and poverty is defeated.
+                            </p>
+                            <div class="social-links">
+                                <svg class="telegram" width="24" height="24">
+                                    <use xlink:href="#telegram"></use>
+                                </svg>
+                                <svg class="twitter" width="24" height="24">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                                <svg class="whatsapp" width="24" height="24">
+                                    <use xlink:href="#whatsapp"></use>
+                                </svg>
+                                <svg class="facebook" width="24" height="24">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a class="text-decoration-none text-white" href="#our_process">Our Process</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-decoration-none text-white" href="#our_programs">Programs</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-decoration-none text-white" href="#our_vision.html">Vision</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <h6>
+                                    <a class="text-decoration-none text-white" href="#">Blog</a>
+                                </h6>
+                                <h6>
+                                    <a class="text-decoration-none text-white" href="#">Contact</a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <p>
+                            Feel free to reach out to Wins and Profits — whether you’re looking to collaborate, ask questions, or just have a conversation.
+                        </p>
+                        <h3>
+                            <a href="mailto:contact@yourwebsite.com" class="text-white text-decoration-none">contact@yourwebsite.com</a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="js/jquery-1.11.0.min.js"></script> <!-- jquery file-->
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> <!--cdn link-->
+        <script src="js/plugins.js"></script>
+        <script type="text/javascript" src="js/lightbox.min.js"></script>
+
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+
+</html>
