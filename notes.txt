@@ -1,0 +1,3 @@
+Deriv for binary trading
+
+Scopes for  MT5
